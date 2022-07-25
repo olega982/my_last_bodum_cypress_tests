@@ -1,0 +1,22 @@
+{
+  "devDependencies": {
+    "cypress": "^10.3.0",
+    "cypress-multi-reporters": "^1.6.1",
+    "cypress-real-events": "^1.7.1",
+    "mocha-junit-reporter": "^2.0.2",
+    "mochawesome": "^7.1.3",
+    "mochawesome-merge": "^4.2.1",
+    "mochawesome-report-generator": "^6.2.0"
+  },
+  "scripts": {
+    "cypress:go":"npx cypress run",
+    "delete:reports":"(if exist cypress\\results (rmdir /Q /S cypress\\results))",
+    "cypress:run":"npm run prereport && npx cypress run",
+    "mochawesome:merge": "npx mochawesome-merge \"cypress/results/mochawesome/*.json\" > mochawesome.json && npx marge mochawesome.json",
+    "prereport": "npm run delete:reports",
+    "createreport":"npm run junit:merge && npm run mochawesome:merge",
+    "combine:reports": "jrm cypress/results/combined-report.xml \"cypress/results/*.xml\"",
+    "junit:merge":"npx junit-merge -d cypress/results/junit -o cypress/results/junit/result.xml",
+    "report": "cypress run --reporter cypress-multi-reporters --reporter-options configFile=reporter-config.json"
+  }
+}

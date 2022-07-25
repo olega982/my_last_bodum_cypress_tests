@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<testsuites>
+<testsuite name="Root Suite" timestamp="2022-07-15T09:58:40" tests="0" file="cypress\e2e\first_test.cy.js" time="0.0000" failures="0"></testsuite>
+<testsuite name="My basic tests for the bodum website" timestamp="2022-07-15T09:58:40" tests="1" time="7.0420" failures="0">
+  
+  <testcase name="My basic tests for the bodum website User search specific product" time="6.9980" classname="User search specific product"></testcase>
+  
+</testsuite>
+
+<testsuite name="Root Suite" timestamp="2022-07-15T09:58:51" tests="0" file="cypress\e2e\second_test.cy.js" time="0.0000" failures="0"></testsuite>
+<testsuite name="My basic tests for the bodum website" timestamp="2022-07-15T09:58:51" tests="1" time="5.7120" failures="0">
+  
+  <testcase name="My basic tests for the bodum website User search specific product" time="5.6320" classname="User search specific product"></testcase>
+  
+</testsuite>
+
+</testsuites>

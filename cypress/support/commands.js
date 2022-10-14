@@ -26,3 +26,4 @@
 Cypress.Commands.add('visitBoumWebsite',()=>{
     cy.visit('/')
 })
+

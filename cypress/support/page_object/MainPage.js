@@ -11,7 +11,7 @@ export class MainPage {
             cy.get('#CybotCookiebotDialogBodyLevelButtonLevelOptinDeclineAll').click({force:true})
         }
     closeDiscountForm(){
-        cy.get('#close-form').find('circle').click({force:true})
+        cy.get('[data-testid="POPUP"]').find('circle').click({force:true})
     }
     clcikSubCategoryByOrder(itemorder){
         cy.get('.megaMenuList__item').eq(itemorder).click()
